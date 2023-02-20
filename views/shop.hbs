@@ -1,0 +1,15 @@
+{{!-- keep only {{{body things}}} --}}
+    <main>
+       <h1>My Products</h1>
+       <p>List of all products...</p>
+       {{#if hasProds}}
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_3ELUAraSJdzdVvyOYEfK2ow6D0v7vKjCFEfI_9PRxw8rJ76yPpc801zXcENooNy5Pc&usqp=CAU">
+        {{#each prods}}
+        <p>{{this.title}}</p>
+        {{/each}}
+       </div>
+       {{ else  }}
+       <h1>No Products Found</h1>
+        {{/if}}
+    </main>
